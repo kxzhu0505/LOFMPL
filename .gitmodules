@@ -1,0 +1,3 @@
+[submodule "rl_logic_synthesis"]
+	path = rl_logic_synthesis
+	url = https://github.com/phyzhenli/rl_logic_synthesis.git
