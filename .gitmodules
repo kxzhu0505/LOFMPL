@@ -1,3 +1,9 @@
 [submodule "rl_logic_synthesis"]
 	path = rl_logic_synthesis
 	url = https://github.com/phyzhenli/rl_logic_synthesis.git
+[submodule "abc_p"]
+	path = abc_p
+	url = https://github.com/kxzhu0505/abc_p.git
+[submodule "LSOracle_p"]
+	path = LSOracle_p
+	url = https://github.com/kxzhu0505/LSOracle_p.git
