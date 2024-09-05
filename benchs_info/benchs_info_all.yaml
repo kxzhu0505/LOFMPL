@@ -1,0 +1,1064 @@
+- file(s): [../verilogs/benchmarks/random_control/dec.v]
+  top: dec
+  out_dir: ./outputs/benchmarks/random_control/dec
+  type: combinational
+- file(s): [../verilogs/benchmarks/random_control/router.v]
+  top: top
+  out_dir: ./outputs/benchmarks/random_control/router
+  type: combinational
+- file(s): [../verilogs/benchmarks/random_control/arbiter.v]
+  top: top
+  out_dir: ./outputs/benchmarks/random_control/arbiter
+  type: combinational
+- file(s): [../verilogs/benchmarks/random_control/cavlc.v]
+  top: top
+  out_dir: ./outputs/benchmarks/random_control/cavlc
+  type: combinational
+- file(s): [../verilogs/benchmarks/random_control/mem_ctrl.v]
+  top: mem_ctrl
+  out_dir: ./outputs/benchmarks/random_control/mem_ctrl
+  type: combinational
+- file(s): [../verilogs/benchmarks/random_control/priority.v]
+  top: top
+  out_dir: ./outputs/benchmarks/random_control/priority
+  type: combinational
+- file(s): [../verilogs/benchmarks/random_control/int2float.v]
+  top: top
+  out_dir: ./outputs/benchmarks/random_control/int2float
+  type: combinational
+- file(s): [../verilogs/benchmarks/random_control/i2c.v]
+  top: i2c
+  out_dir: ./outputs/benchmarks/random_control/i2c
+  type: combinational
+- file(s): [../verilogs/benchmarks/random_control/ctrl.v]
+  top: top
+  out_dir: ./outputs/benchmarks/random_control/ctrl
+  type: combinational
+- file(s): [../verilogs/benchmarks/random_control/voter.v]
+  top: top
+  out_dir: ./outputs/benchmarks/random_control/voter
+  type: combinational
+- file(s): [../verilogs/benchmarks/arithmetic/square.v]
+  top: top
+  out_dir: ./outputs/benchmarks/arithmetic/square
+  type: combinational
+- file(s): [../verilogs/benchmarks/arithmetic/sqrt.v]
+  top: top
+  out_dir: ./outputs/benchmarks/arithmetic/sqrt
+  type: combinational
+- file(s): [../verilogs/benchmarks/arithmetic/bar.v]
+  top: top
+  out_dir: ./outputs/benchmarks/arithmetic/bar
+  type: combinational
+- file(s): [../verilogs/benchmarks/arithmetic/div.v]
+  top: top
+  out_dir: ./outputs/benchmarks/arithmetic/div
+  type: combinational
+- file(s): [../verilogs/benchmarks/arithmetic/adder.v]
+  top: top
+  out_dir: ./outputs/benchmarks/arithmetic/adder
+  type: combinational
+- file(s): [../verilogs/benchmarks/arithmetic/multiplier.v]
+  top: top
+  out_dir: ./outputs/benchmarks/arithmetic/multiplier
+  type: combinational
+- file(s): [../verilogs/benchmarks/arithmetic/max.v]
+  top: top
+  out_dir: ./outputs/benchmarks/arithmetic/max
+  type: combinational
+- file(s): [../verilogs/benchmarks/arithmetic/hyp.v]
+  top: top
+  out_dir: ./outputs/benchmarks/arithmetic/hyp
+  type: combinational
+- file(s): [../verilogs/benchmarks/arithmetic/log2.v]
+  top: top
+  out_dir: ./outputs/benchmarks/arithmetic/log2
+  type: combinational
+- file(s): [../verilogs/benchmarks/arithmetic/sin.v]
+  top: top
+  out_dir: ./outputs/benchmarks/arithmetic/sin
+  type: combinational
+- file(s): [../verilogs/OPDB/modules/chip/X_1__Y_1__NETWORK_2dmesh__L1D_8192_4__L1I_16384_4__L15_8192_4__L2_65536_4/chip.pickle.v]
+  top: chip
+  out_dir: ./outputs/OPDB
+  comment: lsoracle flow MAX MEM 454.2 Gbytes;  AVG MEM 277 Gbytes
+- file(s): [../verilogs/OPDB/modules/chip_bridge/chip_bridge.pickle.v]
+  top: chip_bridge
+  out_dir: ./outputs/OPDB
+  type: sequential
+  clk(s): [chip_clk, intcnct_clk]
+  reset(s): [rst_n]
+- file(s): [../verilogs/OPDB/modules/dynamic_node_2dmesh/NETWORK_2dmesh/dynamic_node_2dmesh.pickle.v]
+  top: dynamic_node_top_wrap
+  out_dir: ./outputs/OPDB
+  type: sequential
+  clk(s): [clk]
+- file(s): [../verilogs/OPDB/modules/dynamic_node_xbar/NETWORK_xbar/dynamic_node_xbar.pickle.v]
+  top: dynamic_node_top_wrap_para
+  out_dir: ./outputs/OPDB
+  type: sequential
+  clk(s): [clk]
+- file(s): [../verilogs/OPDB/modules/fft/fft.pickle.v]
+  top: fftmain
+  out_dir: ./outputs/OPDB
+  comment: ERROR Can not open file `cmem_256.hex` for \$readmemh
+- file(s): [../verilogs/OPDB/modules/fpga_bridge_rcv_32/fpga_bridge_rcv_32.pickle.v]
+  top: fpga_bridge_rcv_32
+  out_dir: ./outputs/OPDB
+  type: sequential
+  clk(s): [credit_rd_clk, rd_clk, wr_clk]
+- file(s): [../verilogs/OPDB/modules/fpu/fpu.pickle.v]
+  top: fpu
+  out_dir: ./outputs/OPDB
+  type: sequential
+  clk(s): [gclk]
+  reset(s): [arst_l]
+- file(s): [../verilogs/OPDB/modules/gng/gng.pickle.v]
+  top: gng
+  out_dir: ./outputs/OPDB
+  type: sequential
+  clk(s): [clk]
+  reset(s): [rstn]
+- file(s): [../verilogs/OPDB/modules/ifu_esl/ifu_esl.pickle.v]
+  top: sparc_ifu_esl
+  out_dir: ./outputs/OPDB
+  type: sequential
+  clk(s): [clk]
+  reset(s): [rst_n]
+- file(s): [../verilogs/OPDB/modules/ifu_esl_counter/ifu_esl_counter.pickle.v]
+  top: sparc_ifu_esl_counter
+  out_dir: ./outputs/OPDB
+  type: sequential
+  clk(s): [clk]
+  reset(s): [rst_n]
+- file(s): [../verilogs/OPDB/modules/ifu_esl_fsm/ifu_esl_fsm.pickle.v]
+  top: sparc_ifu_esl_fsm
+  out_dir: ./outputs/OPDB
+  type: sequential
+  clk(s): [clk]
+  reset(s): [rst_n]
+- file(s): [../verilogs/OPDB/modules/ifu_esl_htsm/ifu_esl_htsm.pickle.v]
+  top: sparc_ifu_esl_htsm
+  out_dir: ./outputs/OPDB
+  type: sequential
+  clk(s): [clk]
+  reset(s): [rst_n]
+- file(s): [../verilogs/OPDB/modules/ifu_esl_lfsr/ifu_esl_lfsr.pickle.v]
+  top: sparc_ifu_esl_lfsr
+  out_dir: ./outputs/OPDB
+  type: sequential
+  clk(s): [clk]
+  reset(s): [rst_n]
+- file(s): [../verilogs/OPDB/modules/ifu_esl_rtsm/ifu_esl_rtsm.pickle.v]
+  top: sparc_ifu_esl_rtsm
+  out_dir: ./outputs/OPDB
+  type: combinational
+- file(s): [../verilogs/OPDB/modules/ifu_esl_shiftreg/ifu_esl_shiftreg.pickle.v]
+  top: sparc_ifu_esl_shiftreg
+  out_dir: ./outputs/OPDB
+  type: sequential
+  clk(s): [clk]
+  reset(s): [rst_n]
+- file(s): [../verilogs/OPDB/modules/ifu_esl_stsm/ifu_esl_stsm.pickle.v]
+  top: sparc_ifu_esl_stsm
+  out_dir: ./outputs/OPDB
+  type: combinational
+- file(s): [../verilogs/OPDB/modules/l2/NETWORK_2dmesh__L2_65536_4/l2.pickle.v]
+  top: l2
+  out_dir: ./outputs/OPDB
+  comment: lsoracle flow MAX MEM 425.6 Gbytes;  AVG MEM 221.9 Gbytes
+- file(s): [../verilogs/OPDB/modules/l15/NETWORK_2dmesh__L1D_8192_4__L15_8192_4/l15.pickle.v]
+  top: l15_wrap
+  out_dir: ./outputs/OPDB
+  type: sequential
+  clk(s): [clk]
+  reset(s): [rst_n]
+- file(s): [../verilogs/OPDB/modules/miaow/miaow.pickle.v]
+  top: neko
+  out_dir: ./outputs/OPDB
+  comment: ERROR Multiple edge sensitive events found for this signal!
+- file(s): [../verilogs/OPDB/modules/pico/pico.pickle.v]
+  top: picorv32
+  out_dir: ./outputs/OPDB
+  type: sequential
+  clk(s): [clk]
+  reset(s): [reset_l]
+- file(s): [../verilogs/OPDB/modules/sparc_core/L1I_16384_4__L1D_8192_4/sparc_core.pickle.v]
+  top: sparc_core
+  out_dir: ./outputs/OPDB
+  type: sequential
+  clk(s): [gclk]
+  reset(s): [reset_l]
+- file(s): [../verilogs/OPDB/modules/sparc_exu/sparc_exu.pickle.v]
+  top: sparc_exu_wrap
+  out_dir: ./outputs/OPDB
+  type: sequential
+  clk(s): [rclk]
+  reset(s): [arst_l]
+- file(s): [../verilogs/OPDB/modules/sparc_ffu/sparc_ffu.pickle.v]
+  top: sparc_ffu_nospu_wrap
+  out_dir: ./outputs/OPDB
+  type: sequential
+  clk(s): [rclk]
+  reset(s): [arst_l, grst_l]
+- file(s): [../verilogs/OPDB/modules/sparc_ifu/L1I_16384_4/sparc_ifu.pickle.v]
+  top: sparc_ifu
+  out_dir: ./outputs/OPDB
+  type: sequential
+  clk(s): [rclk]
+  reset(s): [arst_l]
+- file(s): [../verilogs/OPDB/modules/sparc_lsu/L1D_8192_4/sparc_lsu.pickle.v]
+  top: lsu
+  out_dir: ./outputs/OPDB
+  type: sequential
+  clk(s): [clk]
+  reset(s): [arst_l]
+- file(s): [../verilogs/OPDB/modules/sparc_mul/sparc_mul.pickle.v]
+  top: sparc_mul_top_nospu_wrap
+  out_dir: ./outputs/OPDB
+  type: sequential
+  clk(s): [rclk]
+  reset(s): [arst_l]
+- file(s): [../verilogs/OPDB/modules/sparc_tlu/sparc_tlu.pickle.v]
+  top: tlu_nospu_wrap
+  out_dir: ./outputs/OPDB
+  type: sequential
+  clk(s): [rclk]
+  reset(s): [arst_l, grst_l]
+- file(s): [../verilogs/OPDB/modules/tile/NETWORK_2dmesh__L1D_8192_4__L1I_16384_4__L15_8192_4__L2_65536_4/tile.pickle.v]
+  top: tile
+  out_dir: ./outputs/OPDB
+  comment: dc_shell timing reports no paths.
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/iscas/rtl/s1196.v]
+  top: s1196_bench
+  out_dir: ./outputs/iwls05/iscas
+  type: sequential
+  clk(s): [blif_clk_net]
+  reset(s): [blif_reset_net]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/iscas/rtl/s1238.v]
+  top: s1238_bench
+  out_dir: ./outputs/iwls05/iscas
+  type: sequential
+  clk(s): [blif_clk_net]
+  reset(s): [blif_reset_net]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/iscas/rtl/s13207.v]
+  top: s13207_bench
+  out_dir: ./outputs/iwls05/iscas
+  type: sequential
+  clk(s): [blif_clk_net]
+  reset(s): [blif_reset_net]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/iscas/rtl/s1423.v]
+  top: s1423_bench
+  out_dir: ./outputs/iwls05/iscas
+  type: sequential
+  clk(s): [blif_clk_net]
+  reset(s): [blif_reset_net]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/iscas/rtl/s1488.v]
+  top: s1488_bench
+  out_dir: ./outputs/iwls05/iscas
+  type: sequential
+  clk(s): [blif_clk_net]
+  reset(s): [blif_reset_net]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/iscas/rtl/s1494.v]
+  top: s1494_bench
+  out_dir: ./outputs/iwls05/iscas
+  type: sequential
+  clk(s): [blif_clk_net]
+  reset(s): [blif_reset_net]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/iscas/rtl/s15850.v]
+  top: s15850_bench
+  out_dir: ./outputs/iwls05/iscas
+  type: sequential
+  clk(s): [blif_clk_net]
+  reset(s): [blif_reset_net]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/iscas/rtl/s208_1.v]
+  top: s208_1_bench
+  out_dir: ./outputs/iwls05/iscas
+  type: sequential
+  clk(s): [blif_clk_net]
+  reset(s): [blif_reset_net]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/iscas/rtl/s27.v]
+  top: s27_bench
+  out_dir: ./outputs/iwls05/iscas
+  type: sequential
+  clk(s): [blif_clk_net]
+  reset(s): [blif_reset_net]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/iscas/rtl/s298.v]
+  top: s298_bench
+  out_dir: ./outputs/iwls05/iscas
+  type: sequential
+  clk(s): [blif_clk_net]
+  reset(s): [blif_reset_net]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/iscas/rtl/s344.v]
+  top: s344_bench
+  out_dir: ./outputs/iwls05/iscas
+  type: sequential
+  clk(s): [blif_clk_net]
+  reset(s): [blif_reset_net]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/iscas/rtl/s349.v]
+  top: s349_bench
+  out_dir: ./outputs/iwls05/iscas
+  type: sequential
+  clk(s): [blif_clk_net]
+  reset(s): [blif_reset_net]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/iscas/rtl/s35932.v]
+  top: s35932_bench
+  out_dir: ./outputs/iwls05/iscas
+  type: sequential
+  clk(s): [blif_clk_net]
+  reset(s): [blif_reset_net]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/iscas/rtl/s382.v]
+  top: s382_bench
+  out_dir: ./outputs/iwls05/iscas
+  type: sequential
+  clk(s): [blif_clk_net]
+  reset(s): [blif_reset_net]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/iscas/rtl/s38417.v]
+  top: s38417_bench
+  out_dir: ./outputs/iwls05/iscas
+  type: sequential
+  clk(s): [blif_clk_net]
+  reset(s): [blif_reset_net]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/iscas/rtl/s38584.v]
+  top: s38584_bench
+  out_dir: ./outputs/iwls05/iscas
+  type: sequential
+  clk(s): [blif_clk_net]
+  reset(s): [blif_reset_net]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/iscas/rtl/s386.v]
+  top: s386_bench
+  out_dir: ./outputs/iwls05/iscas
+  type: sequential
+  clk(s): [blif_clk_net]
+  reset(s): [blif_reset_net]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/iscas/rtl/s400.v]
+  top: s400_bench
+  out_dir: ./outputs/iwls05/iscas
+  type: sequential
+  clk(s): [blif_clk_net]
+  reset(s): [blif_reset_net]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/iscas/rtl/s420_1.v]
+  top: s420_1_bench
+  out_dir: ./outputs/iwls05/iscas
+  type: sequential
+  clk(s): [blif_clk_net]
+  reset(s): [blif_reset_net]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/iscas/rtl/s444.v]
+  top: s444_bench
+  out_dir: ./outputs/iwls05/iscas
+  type: sequential
+  clk(s): [blif_clk_net]
+  reset(s): [blif_reset_net]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/iscas/rtl/s510.v]
+  top: s510_bench
+  out_dir: ./outputs/iwls05/iscas
+  type: sequential
+  clk(s): [blif_clk_net]
+  reset(s): [blif_reset_net]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/iscas/rtl/s526n.v]
+  top: s526n_bench
+  out_dir: ./outputs/iwls05/iscas
+  type: sequential
+  clk(s): [blif_clk_net]
+  reset(s): [blif_reset_net]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/iscas/rtl/s526.v]
+  top: s526_bench
+  out_dir: ./outputs/iwls05/iscas
+  type: sequential
+  clk(s): [blif_clk_net]
+  reset(s): [blif_reset_net]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/iscas/rtl/s5378.v]
+  top: s5378_bench
+  out_dir: ./outputs/iwls05/iscas
+  type: sequential
+  clk(s): [blif_clk_net]
+  reset(s): [blif_reset_net]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/iscas/rtl/s641.v]
+  top: s641_bench
+  out_dir: ./outputs/iwls05/iscas
+  type: sequential
+  clk(s): [blif_clk_net]
+  reset(s): [blif_reset_net]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/iscas/rtl/s713.v]
+  top: s713_bench
+  out_dir: ./outputs/iwls05/iscas
+  type: sequential
+  clk(s): [blif_clk_net]
+  reset(s): [blif_reset_net]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/iscas/rtl/s820.v]
+  top: s820_bench
+  out_dir: ./outputs/iwls05/iscas
+  type: sequential
+  clk(s): [blif_clk_net]
+  reset(s): [blif_reset_net]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/iscas/rtl/s832.v]
+  top: s832_bench
+  out_dir: ./outputs/iwls05/iscas
+  type: sequential
+  clk(s): [blif_clk_net]
+  reset(s): [blif_reset_net]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/iscas/rtl/s838_1.v]
+  top: s838_1_bench
+  out_dir: ./outputs/iwls05/iscas
+  type: sequential
+  clk(s): [blif_clk_net]
+  reset(s): [blif_reset_net]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/iscas/rtl/s9234_1.v]
+  top: s9234_1_bench
+  out_dir: ./outputs/iwls05/iscas
+  type: sequential
+  clk(s): [blif_clk_net]
+  reset(s): [blif_reset_net]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/iscas/rtl/s953.v]
+  top: s953_bench
+  out_dir: ./outputs/iwls05/iscas
+  comment: Number of cells 0
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DMA/hdl/dma_ahbdec.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DMA/hdl/dma_ahbmst.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DMA/hdl/dma_ahbmux.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DMA/hdl/dma_ahbslv.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DMA/hdl/dma_chrf.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DMA/hdl/dma_chsel.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DMA/hdl/dma_ctlrf.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DMA/hdl/DMA_DEFINE.vh, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DMA/hdl/dma_engine.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DMA/hdl/dma_fifo.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DMA/hdl/DMA_FIX_DEFINE.vh, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DMA/hdl/dma_rrarb.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DMA/hdl/dma_top.v]
+  top: dma_top
+  out_dir: ./outputs/iwls05/faraday
+  type: sequential
+  clk(s): [HCLK]
+  reset(s): [HRSTn]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/MEMC/m_emc.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/MEMC/m_memc.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/DEC/c_dec.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/SPORT1/s_screg1.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/SPORT1/s_rxctl1.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/SPORT1/s_scfg1.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/SPORT1/s_txctl1.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/SPORT1/s_sport1.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/DAG/d_ILM2reg.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/DAG/d_adder15.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/DAG/d_lpn.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/DAG/d_cla15.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/DAG/d_csa15.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/DAG/d_ILM1reg.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/DAG/d_moduloL1.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/DAG/d_moduloL2.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/DAG/d_dag.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/PIO/pio.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/LIB/m_dm8k.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/LIB/m_cm8k.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/LIB/m_eeprom.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/LIB/x_lib.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/LIB/m_em4k.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/LIB/m_cm4k.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/LIB/m_pm4k.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/LIB/x_gclk_lib.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/LIB/m_eio2k.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/ICE/i_sice.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/ICE/x_parsm.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/ICE/x_parser.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/TM/Timer.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/PSQ/c_lpstk.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/PSQ/c_cntstk.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/PSQ/c_ststk.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/PSQ/c_psq.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/PSQ/c_pcstk.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/BTB/m_rtbmemx.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/BTB/c_btb.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/BTB/m_btbmemx.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/BDMA/m_bdma.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/SPORT0/s_compand.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/SPORT0/s_txctl0.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/SPORT0/s_autoctl.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/SPORT0/s_compress.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/SPORT0/s_rxctl0.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/SPORT0/s_screg0.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/SPORT0/s_expand.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/SPORT0/s_scfg0.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/SPORT0/s_sport0.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/TOP/t_clkctl.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/TOP/t_dsp.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/TOP/t_glogic.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/TOP/t_core.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/TOP/t_rego.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/TOP/t_muxio.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/TOP/t_pin_rtl.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/TOP/t_top.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/TOP/def.par, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/IDMA/m_idma.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/DFT/wrapper.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/CODEC/FXADDA162H90A/DAC162H90A_dtop.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/CODEC/FXADDA162H90A/ram_32_44.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/CODEC/FXADDA162H90A/FS90B779_DAI.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/CODEC/FXADDA162H90A/header.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/CODEC/FXADDA162H90A/ADDA162H90A_atop.v.src, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/CODEC/FXADDA162H90A/ADC162H90A_dtop.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/CODEC/FXADDA162H90A/FXADDA162H90A.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/CODEC/FXADDA162H90A/ADDA162H90A_atop.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/CODEC/FXADDA162H90A/fir_8x.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/CODEC/FXADDA162H90A/MCLK_Delay.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/CODEC/FXADDA162H90A/FS90B779.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/CODEC/FXADDA162H90A/decode.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/EU/CUN/ec_cun.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/EU/ALU/ea_dec.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/EU/ALU/ea_alu.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/EU/ALU/ea_reg.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/EU/ALU/ea_core.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/EU/ALU/e_eu.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/EU/SHT/es_exp.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/EU/SHT/es_dec.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/EU/SHT/es_reg.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/EU/SHT/es_array.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/EU/SHT/es_sht.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/EU/MAC/em_dec.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/EU/MAC/em_mac.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/EU/MAC/em_mvovf.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/EU/MAC/em_array.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/EU/MAC/em_adder.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/EU/MAC/em_reg.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/EU/MAC/em_core.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/hdl/EU/MAC/em_part.v]
+  include_dir: ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/DSP/include/
+  top: TOP
+  out_dir: ./outputs/iwls05/faraday
+  type: sequential
+  clk(s): [X_CLKI, X_SCLK0, X_SCLK1]
+  reset(s): [X_ICE_RSTn, X_RSTn]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/ghij.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/hij.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/wxyz.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/cde.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/rst.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/efg.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/def.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/cdefgh.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/jklm.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/bcdef.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/uvwxy.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/defgh.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/opqr.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/cdef.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/fghi.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/tuvw.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/rstu.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/stuvw.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/fgh.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/qrst.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/tuvwx.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/pqr.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/jklmno.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/mnopq.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/ghi.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/hijklm.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/rstuv.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/fghij.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/zzzz.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/abcdef.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/efgh.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/cdefg.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/vwxy.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/lmno.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/pqrs.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/hijkl.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/ijklmn.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/ghijkl.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/opqrs.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/jkl.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/efghij.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/ijklm.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/fghijk.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/defghi.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/uvwx.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/bcdefg.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/ijkl.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/tuv.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/wxy.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/mnop.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/qrstu.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/bcde.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/jklmn.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/ghijk.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/pqrst.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/klmno.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/mno.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/lmnop.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/hijk.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/nopqr.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/efghi.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/abc.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/abcd.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/klmnop.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/defg.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/xyz.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/nop.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/stuv.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/klmn.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/ijk.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/abcde.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/bcd.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/vwxyz.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/vwx.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/opq.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/stu.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/uvw.v, ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/hdl/nopq.v]
+  include_dir: ../verilogs/hdl-benchmarks/hdl/iwls05/faraday/rtl/RISC/include/
+  top: frisc
+  out_dir: ./outputs/iwls05/faraday
+  type: sequential
+  clk(s): [BUSCLK, BUSCLKF, JTAG_CLOCK, SYSCLK, SYSCLKF]
+  reset(s): [CResetN, JTAG_TRST_N]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/ac97_ctrl/ac97_top.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/ac97_ctrl/ac97_sin.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/ac97_ctrl/ac97_dma_req.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/ac97_ctrl/ac97_prc.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/ac97_ctrl/ac97_in_fifo.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/ac97_ctrl/ac97_rf.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/ac97_ctrl/ac97_int.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/ac97_ctrl/ac97_soc.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/ac97_ctrl/ac97_out_fifo.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/ac97_ctrl/ac97_fifo_ctrl.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/ac97_ctrl/ac97_defines.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/ac97_ctrl/ac97_dma_if.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/ac97_ctrl/ac97_sout.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/ac97_ctrl/ac97_cra.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/ac97_ctrl/ac97_wb_if.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/ac97_ctrl/ac97_rst.v]
+  top: ac97_top
+  out_dir: ./outputs/iwls05/opencores
+  type: sequential
+  clk(s): [bit_clk_pad_i, clk_i]
+  reset(s): [rst_i]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/aes_core/aes_inv_cipher_top.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/aes_core/aes_sbox.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/aes_core/aes_cipher_top.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/aes_core/aes_rcon.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/aes_core/aes_key_expand_128.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/aes_core/timescale.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/aes_core/aes_inv_sbox.v]
+  top: aes_cipher_top
+  out_dir: ./outputs/iwls05/opencores
+  type: sequential
+  clk(s): [clk]
+  reset(s): [rst]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/des/perf_opt/des.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/des/perf_opt/key_sel.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/des/perf_opt/des3.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/des/common/sbox5.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/des/common/sbox6.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/des/common/sbox2.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/des/common/sbox4.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/des/common/sbox7.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/des/common/crp.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/des/common/sbox3.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/des/common/sbox8.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/des/common/sbox1.v]
+  top: des
+  out_dir: ./outputs/iwls05/opencores/des
+  type: sequential
+  clk(s): [clk]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/ethernet/eth_txcounters.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/ethernet/xilinx_dist_ram_16x32.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/ethernet/eth_txstatem.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/ethernet/eth_top.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/ethernet/eth_wishbone.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/ethernet/eth_txethmac.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/ethernet/eth_transmitcontrol.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/ethernet/eth_macstatus.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/ethernet/eth_random.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/ethernet/eth_shiftreg.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/ethernet/eth_register.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/ethernet/eth_clockgen.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/ethernet/eth_receivecontrol.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/ethernet/eth_fifo.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/ethernet/eth_crc.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/ethernet/eth_rxaddrcheck.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/ethernet/eth_defines.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/ethernet/eth_rxcounters.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/ethernet/eth_rxstatem.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/ethernet/eth_outputcontrol.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/ethernet/eth_miim.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/ethernet/eth_rxethmac.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/ethernet/eth_registers.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/ethernet/eth_spram_256x32.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/ethernet/timescale.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/ethernet/eth_maccontrol.v]
+  top: eth_top
+  out_dir: ./outputs/iwls05/opencores
+  type: sequential
+  clk(s): [mrx_clk_pad_i, mtx_clk_pad_i, wb_clk_i]
+  reset(s): [wb_rst_i]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/fpu/except.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/fpu/pre_norm.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/fpu/pre_norm_fmul.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/fpu/primitives.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/fpu/fpu.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/fpu/post_norm.v]
+  top: fpu
+  out_dir: ./outputs/iwls05/opencores
+  type: sequential
+  clk(s): [clk]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/i2c/i2c_master_top.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/i2c/i2c_master_byte_ctrl.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/i2c/i2c_master_bit_ctrl.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/i2c/i2c_master_defines.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/i2c/timescale.v]
+  top: i2c_master_top
+  out_dir: ./outputs/iwls05/opencores
+  type: sequential
+  clk(s): [wb_clk_i]
+  reset(s): [arst_i]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/mem_ctrl/mc_rd_fifo.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/mem_ctrl/mc_obct.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/mem_ctrl/mc_incn_r.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/mem_ctrl/mc_obct_top.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/mem_ctrl/mc_refresh.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/mem_ctrl/mc_wb_if.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/mem_ctrl/mc_timing.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/mem_ctrl/mc_defines.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/mem_ctrl/mc_dp.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/mem_ctrl/mc_mem_if.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/mem_ctrl/mc_adr_sel.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/mem_ctrl/mc_top.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/mem_ctrl/mc_cs_rf.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/mem_ctrl/mc_rf.v]
+  top: mc_top
+  out_dir: ./outputs/iwls05/opencores
+  type: sequential
+  clk(s): [clk_i, mc_clk_i]
+  reset(s): [rst_i]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_user_constants.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_frame_crit.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_wb_decoder.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_perr_en_crit.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_wbs_wbb3_2_wbb2.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_pci_decoder.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_frame_load_crit.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_bridge32.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_io_mux.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_out_reg.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_synchronizer_flop.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_irdy_out_crit.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_master32_sm.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_cur_out_reg.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_par_crit.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_serr_crit.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/bus_commands.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_mas_ch_state_crit.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_conf_cyc_addr_dec.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_target32_stop_crit.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_wb_slave.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_target32_clk_en.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_io_mux_ad_load_crit.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_async_reset_flop.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_pciw_pcir_fifos.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_frame_en_crit.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_target32_sm.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_pciw_fifo_control.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_constants.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_target32_devs_crit.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_spoci_ctrl.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_perr_crit.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_sync_module.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_rst_int.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_target_unit.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_delayed_sync.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_parity_check.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_mas_ad_en_crit.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_cbe_en_crit.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_mas_ad_load_crit.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_wb_addr_mux.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_wbw_fifo_control.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_pcir_fifo_control.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_wb_master.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_conf_space.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_serr_en_crit.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_target32_trdy_crit.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_delayed_write_reg.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_pci_tpram.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_wb_tpram.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_wbw_wbr_fifos.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_in_reg.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_master32_sm_if.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/timescale.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_ram_16x40d.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_target32_interface.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_wb_slave_unit.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_io_mux_ad_en_crit.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/pci/pci_wbr_fifo_control.v]
+  top: pci_bridge32
+  out_dir: ./outputs/iwls05/opencores
+  type: sequential
+  clk(s): [pci_clk_i, wb_clk_i]
+  reset(s): [pci_rst_i]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/sasc/sasc_brg.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/sasc/sasc_fifo4.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/sasc/sasc_top.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/sasc/timescale.v]
+  top: sasc_top
+  out_dir: ./outputs/iwls05/opencores
+  type: sequential
+  clk(s): [clk]
+  reset(s): [rst]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/simple_spi/simple_spi_top.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/simple_spi/fifo4.v]
+  top: simple_spi_top
+  out_dir: ./outputs/iwls05/opencores
+  type: sequential
+  clk(s): [clk_i]
+  reset(s): [rst_i]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/spi/spi_top.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/spi/spi_defines.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/spi/spi_shift.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/spi/spi_clgen.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/spi/timescale.v]
+  top: spi_top
+  out_dir: ./outputs/iwls05/opencores
+  type: sequential
+  clk(s): [wb_clk_i]
+  reset(s): [wb_rst_i]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/ss_pcm/pcm_slv_top.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/ss_pcm/timescale.v]
+  top: pcm_slv_top
+  out_dir: ./outputs/iwls05/opencores
+  type: sequential
+  clk(s): [clk]
+  reset(s): [rst]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/systemcaes/keysched.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/systemcaes/subbytes.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/systemcaes/byte_mixcolum.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/systemcaes/aes.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/systemcaes/sbox.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/systemcaes/mixcolum.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/systemcaes/word_mixcolum.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/systemcaes/timescale.v]
+  top: aes
+  out_dir: ./outputs/iwls05/opencores
+  type: sequential
+  clk(s): [clk]
+  reset(s): [reset]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/systemcdes/s8.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/systemcdes/s1.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/systemcdes/des.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/systemcdes/s7.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/systemcdes/s4.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/systemcdes/s3.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/systemcdes/desround.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/systemcdes/s5.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/systemcdes/s6.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/systemcdes/s2.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/systemcdes/key_gen.v]
+  top: des
+  out_dir: ./outputs/iwls05/opencores/systemcdes
+  type: sequential
+  clk(s): [clk]
+  reset(s): [reset]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/tv80/tv80_mcode.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/tv80/tv80_reg.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/tv80/tv80s.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/tv80/tv80_alu.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/tv80/tv80_core.v]
+  top: tv80s
+  out_dir: ./outputs/iwls05/opencores
+  type: sequential
+  clk(s): [clk]
+  reset(s): [reset_n]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/usb_funct/usbf_ep_rf_dummy.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/usb_funct/usbf_pd.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/usb_funct/usbf_mem_arb.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/usb_funct/usbf_top.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/usb_funct/usbf_pa.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/usb_funct/usbf_utmi_if.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/usb_funct/usbf_crc16.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/usb_funct/usbf_ep_rf.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/usb_funct/usbf_wb.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/usb_funct/usbf_idma.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/usb_funct/usbf_pe.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/usb_funct/usbf_crc5.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/usb_funct/usbf_defines.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/usb_funct/usbf_rf.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/usb_funct/usbf_pl.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/usb_funct/usbf_utmi_ls.v]
+  top: usbf_top
+  out_dir: ./outputs/iwls05/opencores
+  type: sequential
+  clk(s): [clk_i, phy_clk_pad_i]
+  reset(s): [rst_i]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/usb_phy/usb_tx_phy.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/usb_phy/usb_rx_phy.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/usb_phy/usb_phy.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/usb_phy/timescale.v]
+  top: usb_phy
+  out_dir: ./outputs/iwls05/opencores
+  type: sequential
+  clk(s): [clk]
+  reset(s): [rst]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/vga_lcd/vga_curproc.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/vga_lcd/vga_wb_master.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/vga_lcd/vga_tgen.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/vga_lcd/vga_fifo.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/vga_lcd/generic_spram.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/vga_lcd/vga_pgen.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/vga_lcd/vga_fifo_dc.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/vga_lcd/vga_enh_top.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/vga_lcd/vga_wb_slave.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/vga_lcd/generic_dpram.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/vga_lcd/vga_colproc.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/vga_lcd/vga_vtim.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/vga_lcd/vga_clkgen.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/vga_lcd/vga_defines.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/vga_lcd/vga_csm_pb.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/vga_lcd/timescale.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/vga_lcd/vga_cur_cregs.v]
+  top: vga_enh_top
+  out_dir: ./outputs/iwls05/opencores
+  type: sequential
+  clk(s): [clk_p_i, wb_clk_i]
+  reset(s): [rst_i]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/wb_conmax/wb_conmax_rf.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/wb_conmax/wb_conmax_pri_enc.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/wb_conmax/wb_conmax_pri_dec.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/wb_conmax/wb_conmax_defines.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/wb_conmax/wb_conmax_top.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/wb_conmax/wb_conmax_master_if.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/wb_conmax/wb_conmax_slave_if.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/wb_conmax/wb_conmax_msel.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/wb_conmax/wb_conmax_arb.v]
+  top: wb_conmax_top
+  out_dir: ./outputs/iwls05/opencores
+  type: sequential
+  clk(s): [clk_i]
+  reset(s): [rst_i]
+- file(s): [../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/wb_dma/wb_dma_top.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/wb_dma/wb_dma_ch_pri_enc.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/wb_dma/wb_dma_ch_sel.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/wb_dma/wb_dma_wb_mast.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/wb_dma/wb_dma_pri_enc_sub.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/wb_dma/wb_dma_wb_slv.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/wb_dma/wb_dma_wb_if.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/wb_dma/wb_dma_rf.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/wb_dma/wb_dma_ch_rf.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/wb_dma/wb_dma_de.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/wb_dma/wb_dma_ch_arb.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/wb_dma/wb_dma_defines.v, ../verilogs/hdl-benchmarks/hdl/iwls05/opencores/rtl/wb_dma/wb_dma_inc30r.v]
+  top: wb_dma_top
+  out_dir: ./outputs/iwls05/opencores
+  type: sequential
+  clk(s): [clk_i]
+  reset(s): [rst_i]
+- file(s): [../verilogs/hdl-benchmarks/hdl/quip/barrel16/barrel16.v]
+  top: barrel16
+  out_dir: ./outputs/quip
+  type: sequential
+  clk(s): [clk]
+- file(s): [../verilogs/hdl-benchmarks/hdl/quip/barrel16a/barrel16a.v]
+  top: barrel16a
+  out_dir: ./outputs/quip
+  type: sequential
+  clk(s): [clk]
+- file(s): [../verilogs/hdl-benchmarks/hdl/quip/barrel32/barrel32.v]
+  top: barrel32
+  out_dir: ./outputs/quip
+  type: sequential
+  clk(s): [clk]
+- file(s): [../verilogs/hdl-benchmarks/hdl/quip/barrel64/barrel64.v]
+  top: barrel64
+  out_dir: ./outputs/quip
+  type: sequential
+  clk(s): [clk]
+- file(s): [../verilogs/hdl-benchmarks/hdl/quip/fip_cordic_cla/adder.v, ../verilogs/hdl-benchmarks/hdl/quip/fip_cordic_cla/bitmux21.v, ../verilogs/hdl-benchmarks/hdl/quip/fip_cordic_cla/busmux21.v, ../verilogs/hdl-benchmarks/hdl/quip/fip_cordic_cla/cla.v, ../verilogs/hdl-benchmarks/hdl/quip/fip_cordic_cla/compl.v, ../verilogs/hdl-benchmarks/hdl/quip/fip_cordic_cla/fip_cordic_cla.v, ../verilogs/hdl-benchmarks/hdl/quip/fip_cordic_cla/header.v, ../verilogs/hdl-benchmarks/hdl/quip/fip_cordic_cla/mem.v, ../verilogs/hdl-benchmarks/hdl/quip/fip_cordic_cla/shifter.v]
+  top: fip_cordic_cla
+  out_dir: ./outputs/quip
+  type: sequential
+  clk(s): [clock]
+  reset(s): [reset]
+- file(s): [../verilogs/hdl-benchmarks/hdl/quip/fip_cordic_rca/adder.v, ../verilogs/hdl-benchmarks/hdl/quip/fip_cordic_rca/bitmux21.v, ../verilogs/hdl-benchmarks/hdl/quip/fip_cordic_rca/busmux21.v, ../verilogs/hdl-benchmarks/hdl/quip/fip_cordic_rca/compl.v, ../verilogs/hdl-benchmarks/hdl/quip/fip_cordic_rca/fip_cordic_rca.v, ../verilogs/hdl-benchmarks/hdl/quip/fip_cordic_rca/header.v, ../verilogs/hdl-benchmarks/hdl/quip/fip_cordic_rca/mem.v, ../verilogs/hdl-benchmarks/hdl/quip/fip_cordic_rca/rca.v, ../verilogs/hdl-benchmarks/hdl/quip/fip_cordic_rca/shifter.v]
+  top: fip_cordic_rca
+  out_dir: ./outputs/quip
+  type: sequential
+  clk(s): [clock]
+  reset(s): [reset]
+- file(s): [../verilogs/hdl-benchmarks/hdl/quip/fip_risc8/alu.v, ../verilogs/hdl-benchmarks/hdl/quip/fip_risc8/dram.v, ../verilogs/hdl-benchmarks/hdl/quip/fip_risc8/fip_risc8.v, ../verilogs/hdl-benchmarks/hdl/quip/fip_risc8/idec.v, ../verilogs/hdl-benchmarks/hdl/quip/fip_risc8/pram.v, ../verilogs/hdl-benchmarks/hdl/quip/fip_risc8/regs.v]
+  top: fip_risc8
+  out_dir: ./outputs/quip
+  type: sequential
+  clk(s): [clk]
+  reset(s): [reset]
+- file(s): [../verilogs/hdl-benchmarks/hdl/quip/mux32_16bit/mux32_16bit.v]
+  top: mux32_16bit
+  out_dir: ./outputs/quip
+  type: sequential
+  clk(s): [clk]
+- file(s): [../verilogs/hdl-benchmarks/hdl/quip/mux64_16bit/mux64_16bit.v]
+  top: mux64_16bit
+  out_dir: ./outputs/quip
+  type: sequential
+  clk(s): [clk]
+- file(s): [../verilogs/hdl-benchmarks/hdl/quip/mux8_128bit/mux8_128bit.v]
+  top: mux8_128bit
+  out_dir: ./outputs/quip
+  type: sequential
+  clk(s): [clk]
+- file(s): [../verilogs/hdl-benchmarks/hdl/quip/mux8_64bit/mux8_64bit.v]
+  top: mux8_64bit
+  out_dir: ./outputs/quip
+  type: sequential
+  clk(s): [clk]
+- file(s): [../verilogs/hdl-benchmarks/hdl/quip/nut_000/nut_000.v, ../verilogs/hdl-benchmarks/hdl/quip/nut_000/nut_000_lut.v, ../verilogs/hdl-benchmarks/hdl/quip/nut_000/nut_000_m245.v, ../verilogs/hdl-benchmarks/hdl/quip/nut_000/nut_000_word_swap.v]
+  top: nut_000
+  out_dir: ./outputs/quip
+  comment: dffea_lib.v:3 ERROR syntax error, unexpected TOK_ID primitive
+- file(s): [../verilogs/hdl-benchmarks/hdl/quip/nut_001/nut_001.v, ../verilogs/hdl-benchmarks/hdl/quip/nut_001/nut_001_deuteronomy.v, ../verilogs/hdl-benchmarks/hdl/quip/nut_001/nut_001_lut.v, ../verilogs/hdl-benchmarks/hdl/quip/nut_001/nut_001_rom_tattoo.v]
+  top: nut_001
+  out_dir: ./outputs/quip
+  comment: dffea_lib.v:3 ERROR syntax error, unexpected TOK_ID primitive
+- file(s): [../verilogs/hdl-benchmarks/hdl/quip/nut_002/nut_002.v, ../verilogs/hdl-benchmarks/hdl/quip/nut_002/nut_002_hagrid_neon.v, ../verilogs/hdl-benchmarks/hdl/quip/nut_002/nut_002_lut.v, ../verilogs/hdl-benchmarks/hdl/quip/nut_002/nut_002_m270.v, ../verilogs/hdl-benchmarks/hdl/quip/nut_002/nut_002_m47.v, ../verilogs/hdl-benchmarks/hdl/quip/nut_002/nut_002_rarest.v]
+  top: nut_002
+  out_dir: ./outputs/quip
+  comment: dffea_lib.v:3 ERROR syntax error, unexpected TOK_ID primitive
+- file(s): [../verilogs/hdl-benchmarks/hdl/quip/nut_003/cmp_state.ini, ../verilogs/hdl-benchmarks/hdl/quip/nut_003/nut_003.qws, ../verilogs/hdl-benchmarks/hdl/quip/nut_003/nut_003.v, ../verilogs/hdl-benchmarks/hdl/quip/nut_003/nut_003_lut.v, ../verilogs/hdl-benchmarks/hdl/quip/nut_003/nut_003_m178.v, ../verilogs/hdl-benchmarks/hdl/quip/nut_003/nut_003_spastic_pilot.v]
+  top: nut_003
+  out_dir: ./outputs/quip
+  comment: dffea_lib.v:3 ERROR syntax error, unexpected TOK_ID primitive
+- file(s): [../verilogs/hdl-benchmarks/hdl/quip/nut_004/nut_004.v, ../verilogs/hdl-benchmarks/hdl/quip/nut_004/nut_004_lut.v, ../verilogs/hdl-benchmarks/hdl/quip/nut_004/nut_004_m149.v, ../verilogs/hdl-benchmarks/hdl/quip/nut_004/nut_004_rom_jesus.v, ../verilogs/hdl-benchmarks/hdl/quip/nut_004/nut_004_word_swap.v]
+  top: nut_004
+  out_dir: ./outputs/quip
+  comment: dffea_lib.v:3 ERROR syntax error, unexpected TOK_ID primitive
+- file(s): [../verilogs/hdl-benchmarks/hdl/quip/oc_aes_core/aes_key_expand_128.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_aes_core/aes_rcon.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_aes_core/aes_sbox.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_aes_core/oc_aes_core.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_aes_core/timescale.v]
+  top: oc_aes_core
+  out_dir: ./outputs/quip
+  type: sequential
+  clk(s): [clk]
+  reset(s): [rst]
+- file(s): [../verilogs/hdl-benchmarks/hdl/quip/oc_aes_core_inv/aes_inv_sbox.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_aes_core_inv/aes_key_expand_128.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_aes_core_inv/aes_rcon.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_aes_core_inv/aes_sbox.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_aes_core_inv/oc_aes_core_inv.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_aes_core_inv/timescale.v]
+  top: oc_aes_core_inv
+  out_dir: ./outputs/quip
+  type: sequential
+  clk(s): [clk]
+  reset(s): [rst]
+- file(s): [../verilogs/hdl-benchmarks/hdl/quip/oc_aquarius/clk_gate.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_aquarius/cpu.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_aquarius/datapath.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_aquarius/decode.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_aquarius/defines.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_aquarius/mem.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_aquarius/memory.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_aquarius/mult.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_aquarius/oc_aquarius.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_aquarius/pio.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_aquarius/register.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_aquarius/sasc_brg.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_aquarius/sasc_fifo4.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_aquarius/sasc_top.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_aquarius/sys.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_aquarius/timescale.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_aquarius/uart.v]
+  top: oc_aquarius
+  out_dir: ./outputs/quip
+  type: sequential
+  clk(s): [CLK_SRC]
+- file(s): [../verilogs/hdl-benchmarks/hdl/quip/oc_des_area_opt/crp.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_des_area_opt/key_sel.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_des_area_opt/oc_des_area_opt.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_des_area_opt/sbox1.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_des_area_opt/sbox2.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_des_area_opt/sbox3.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_des_area_opt/sbox4.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_des_area_opt/sbox5.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_des_area_opt/sbox6.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_des_area_opt/sbox7.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_des_area_opt/sbox8.v]
+  top: oc_des_area_opt
+  out_dir: ./outputs/quip
+  type: sequential
+  clk(s): [clk]
+- file(s): [../verilogs/hdl-benchmarks/hdl/quip/oc_des_des3area/crp.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_des_des3area/des3.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_des_des3area/key_sel3.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_des_des3area/oc_des_des3area.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_des_des3area/sbox1.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_des_des3area/sbox2.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_des_des3area/sbox3.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_des_des3area/sbox4.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_des_des3area/sbox5.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_des_des3area/sbox6.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_des_des3area/sbox7.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_des_des3area/sbox8.v]
+  top: oc_des_des3area
+  out_dir: ./outputs/quip
+  type: sequential
+  clk(s): [clk]
+- file(s): [../verilogs/hdl-benchmarks/hdl/quip/oc_des_des3perf/crp.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_des_des3perf/des.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_des_des3perf/des3.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_des_des3perf/key_sel.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_des_des3perf/oc_des_des3perf.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_des_des3perf/sbox1.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_des_des3perf/sbox2.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_des_des3perf/sbox3.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_des_des3perf/sbox4.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_des_des3perf/sbox5.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_des_des3perf/sbox6.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_des_des3perf/sbox7.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_des_des3perf/sbox8.v]
+  top: oc_des_des3perf
+  out_dir: ./outputs/quip
+  type: sequential
+  clk(s): [clk]
+- file(s): [../verilogs/hdl-benchmarks/hdl/quip/oc_des_perf_opt/crp.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_des_perf_opt/key_sel.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_des_perf_opt/oc_des_perf_opt.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_des_perf_opt/sbox1.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_des_perf_opt/sbox2.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_des_perf_opt/sbox3.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_des_perf_opt/sbox4.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_des_perf_opt/sbox5.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_des_perf_opt/sbox6.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_des_perf_opt/sbox7.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_des_perf_opt/sbox8.v]
+  top: oc_des_perf_opt
+  out_dir: ./outputs/quip
+  type: sequential
+  clk(s): [clk]
+- file(s): [../verilogs/hdl-benchmarks/hdl/quip/oc_ethernet/dpram_16x32.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_ethernet/dpram_16x32_bb.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_ethernet/eth_clockgen.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_ethernet/eth_crc.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_ethernet/eth_defines.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_ethernet/eth_fifo.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_ethernet/eth_maccontrol.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_ethernet/eth_macstatus.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_ethernet/eth_miim.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_ethernet/eth_outputcontrol.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_ethernet/eth_random.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_ethernet/eth_receivecontrol.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_ethernet/eth_register.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_ethernet/eth_registers.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_ethernet/eth_rxaddrcheck.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_ethernet/eth_rxcounters.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_ethernet/eth_rxethmac.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_ethernet/eth_rxstatem.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_ethernet/eth_shiftreg.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_ethernet/eth_spram_256x32.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_ethernet/eth_spram_256x32_bb.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_ethernet/eth_transmitcontrol.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_ethernet/eth_txcounters.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_ethernet/eth_txethmac.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_ethernet/eth_txstatem.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_ethernet/eth_wishbone.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_ethernet/oc_ethernet.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_ethernet/timescale.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_ethernet/altsyncram.v]
+  top: oc_ethernet
+  out_dir: ./outputs/quip
+  type: sequential
+  clk(s): [mrx_clk_pad_i, mtx_clk_pad_i, wb_clk_i]
+  reset(s): [wb_rst_i]
+- file(s): [../verilogs/hdl-benchmarks/hdl/quip/oc_fcmp/oc_fcmp.v]
+  top: oc_fcmp
+  out_dir: ./outputs/quip
+  type: combinational
+- file(s): [../verilogs/hdl-benchmarks/hdl/quip/oc_fpu/except.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_fpu/oc_fpu.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_fpu/post_norm.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_fpu/pre_norm.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_fpu/pre_norm_fmul.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_fpu/primitives.v]
+  top: oc_fpu
+  out_dir: ./outputs/quip
+  type: sequential
+  clk(s): [clk]
+- file(s): [../verilogs/hdl-benchmarks/hdl/quip/oc_gpio/defines.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_gpio/oc_gpio.v]
+  top: oc_gpio
+  out_dir: ./outputs/quip
+  type: sequential
+  clk(s): [ext_clk_pad_i, wb_clk_i]
+  reset(s): [wb_rst_i]
+- file(s): [../verilogs/hdl-benchmarks/hdl/quip/oc_i2c/i2c_master_bit_ctrl.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_i2c/i2c_master_byte_ctrl.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_i2c/i2c_master_defines.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_i2c/oc_i2c.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_i2c/timescale.v]
+  top: oc_i2c
+  out_dir: ./outputs/quip
+  type: sequential
+  clk(s): [wb_clk_i]
+  reset(s): [arst_i]
+- file(s): [../verilogs/hdl-benchmarks/hdl/quip/oc_mem_ctrl/mc_adr_sel.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_mem_ctrl/mc_cs_rf.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_mem_ctrl/mc_defines.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_mem_ctrl/mc_dp.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_mem_ctrl/mc_incn_r.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_mem_ctrl/mc_mem_if.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_mem_ctrl/mc_obct.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_mem_ctrl/mc_obct_top.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_mem_ctrl/mc_rd_fifo.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_mem_ctrl/mc_refresh.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_mem_ctrl/mc_rf.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_mem_ctrl/mc_timing.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_mem_ctrl/mc_wb_if.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_mem_ctrl/oc_mem_ctrl.v]
+  top: oc_mem_ctrl
+  out_dir: ./outputs/quip
+  type: sequential
+  clk(s): [clk_i, mc_clk_i]
+  reset(s): [rst_i]
+- file(s): [../verilogs/hdl-benchmarks/hdl/quip/oc_minirisc/alu.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_minirisc/oc_minirisc.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_minirisc/presclr_wdt.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_minirisc/primitives.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_minirisc/register_file.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_minirisc/risc_core_top.v]
+  top: oc_minirisc
+  out_dir: ./outputs/quip
+  type: sequential
+  clk(s): [clk]
+- file(s): [../verilogs/hdl-benchmarks/hdl/quip/oc_oc8051/dpram_256x8.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_oc8051/dpram_256x8_bb.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_oc8051/dpram_32x32.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_oc8051/dpram_32x32_bb.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_oc8051/oc8051_acc.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_oc8051/oc8051_alu.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_oc8051/oc8051_alu_src_sel.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_oc8051/oc8051_b_register.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_oc8051/oc8051_comp.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_oc8051/oc8051_cy_select.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_oc8051/oc8051_decoder.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_oc8051/oc8051_defines.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_oc8051/oc8051_divide.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_oc8051/oc8051_dptr.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_oc8051/oc8051_icache.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_oc8051/oc8051_indi_addr.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_oc8051/oc8051_int.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_oc8051/oc8051_memory_interface.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_oc8051/oc8051_multiply.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_oc8051/oc8051_ports.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_oc8051/oc8051_psw.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_oc8051/oc8051_ram_top.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_oc8051/oc8051_sfr.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_oc8051/oc8051_sp.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_oc8051/oc8051_tc.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_oc8051/oc8051_tc2.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_oc8051/oc8051_timescale.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_oc8051/oc8051_uart.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_oc8051/oc_oc8051.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_oc8051/altsyncram.v]
+  top: oc_oc8051
+  out_dir: ./outputs/quip
+  comment: ERROR Module `altsyncram' referenced in module `dpram_32x32_bb' in cell `altsyncram_component' does not have a parameter named 'width_byteena_b'.
+- file(s): [../verilogs/hdl-benchmarks/hdl/quip/oc_pci/bus_commands.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/dpram40x256.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/dpram40x256_bb.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/oc_pci.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_async_reset_flop.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_cbe_en_crit.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_conf_space.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_constants.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_cur_out_reg.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_delayed_sync.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_delayed_write_reg.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_frame_crit.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_frame_en_crit.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_frame_load_crit.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_in_reg.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_io_mux.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_io_mux_ad_en_crit.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_io_mux_ad_load_crit.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_irdy_out_crit.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_mas_ad_en_crit.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_mas_ad_load_crit.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_mas_ch_state_crit.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_master32_sm.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_master32_sm_if.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_out_reg.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_par_crit.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_parity_check.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_pci_decoder.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_pci_tpram.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_pcir_fifo_control.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_pciw_fifo_control.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_pciw_pcir_fifos.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_perr_crit.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_perr_en_crit.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_rst_int.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_serr_crit.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_serr_en_crit.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_sync_module.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_synchronizer_flop.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_target32_clk_en.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_target32_devs_crit.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_target32_interface.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_target32_sm.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_target32_stop_crit.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_target32_trdy_crit.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_target_unit.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_user_constants.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_wb_addr_mux.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_wb_decoder.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_wb_master.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_wb_slave.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_wb_slave_unit.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_wb_tpram.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_wbr_fifo_control.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_wbs_wbb3_2_wbb2.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_wbw_fifo_control.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/pci_wbw_wbr_fifos.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_pci/timescale.v]
+  top: oc_pci
+  out_dir: ./outputs/quip
+  comment: ERROR Module `\altsyncram' referenced in module `\dpram128x24_bb' in cell `\altsyncram_component' is not part of the design; ERROR Module `altsyncram' referenced in module `dpram_32x32_bb' in cell `altsyncram_component' does not have a parameter named 'width_byteena_b'.
+- file(s): [../verilogs/hdl-benchmarks/hdl/quip/oc_rtc/defines.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_rtc/oc_rtc.v]
+  top: oc_rtc
+  out_dir: ./outputs/quip
+  type: sequential
+  clk(s): [clk_rtc_pad_i, wb_clk_i]
+  reset(s): [wb_rst_i]
+- file(s): [../verilogs/hdl-benchmarks/hdl/quip/oc_sdram/hostcont.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_sdram/inc.h, ../verilogs/hdl-benchmarks/hdl/quip/oc_sdram/micro.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_sdram/oc_sdram.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_sdram/sdramcnt.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_sdram/tst_inc.h]
+  top: oc_sdram
+  out_dir: ./outputs/quip
+  type: sequential
+  clk(s): [sys_clk]
+  reset(s): [sys_rst_l]
+- file(s): [../verilogs/hdl-benchmarks/hdl/quip/oc_vga_lcd/dpram128x24.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_vga_lcd/dpram128x24_bb.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_vga_lcd/oc_vga_lcd.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_vga_lcd/spram512x24.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_vga_lcd/spram512x24_bb.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_vga_lcd/spram512x32.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_vga_lcd/spram512x32_bb.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_vga_lcd/timescale.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_vga_lcd/vga_clkgen.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_vga_lcd/vga_colproc.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_vga_lcd/vga_csm_pb.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_vga_lcd/vga_cur_cregs.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_vga_lcd/vga_curproc.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_vga_lcd/vga_defines.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_vga_lcd/vga_fifo.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_vga_lcd/vga_fifo_dc.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_vga_lcd/vga_pgen.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_vga_lcd/vga_tgen.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_vga_lcd/vga_vtim.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_vga_lcd/vga_wb_master.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_vga_lcd/vga_wb_slave.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_vga_lcd/altsyncram.v]
+  top: oc_vga_lcd
+  out_dir: ./outputs/quip
+  type: sequential
+  clk(s): [clk_p_i, wb_clk_i]
+  reset(s): [rst_i]
+- file(s): [../verilogs/hdl-benchmarks/hdl/quip/oc_video_compression_systems_dct/dct.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_video_compression_systems_dct/dct_mac.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_video_compression_systems_dct/dctu.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_video_compression_systems_dct/dctub.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_video_compression_systems_dct/fdct.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_video_compression_systems_dct/oc_video_compression_systems_dct.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_video_compression_systems_dct/zigzag.v]
+  top: oc_video_compression_systems_dct
+  out_dir: ./outputs/quip
+  type: sequential
+  clk(s): [clk]
+  reset(s): [rst]
+- file(s): [../verilogs/hdl-benchmarks/hdl/quip/oc_video_compression_systems_huffman_dec/oc_video_compression_systems_huffman_dec.v]
+  top: oc_video_compression_systems_huffman_dec
+  out_dir: ./outputs/quip
+  type: sequential
+  clk(s): [clk]
+  reset(s): [rst]
+- file(s): [../verilogs/hdl-benchmarks/hdl/quip/oc_video_compression_systems_huffman_enc/oc_video_compression_systems_huffman_enc.v]
+  top: oc_video_compression_systems_huffman_enc
+  out_dir: ./outputs/quip
+  type: sequential
+  clk(s): [clk]
+  reset(s): [rst]
+- file(s): [../verilogs/hdl-benchmarks/hdl/quip/oc_video_compression_systems_jpeg/dct.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_video_compression_systems_jpeg/dct_mac.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_video_compression_systems_jpeg/dctu.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_video_compression_systems_jpeg/dctub.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_video_compression_systems_jpeg/div_su.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_video_compression_systems_jpeg/div_uu.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_video_compression_systems_jpeg/fdct.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_video_compression_systems_jpeg/jpeg_qnr.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_video_compression_systems_jpeg/jpeg_rle.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_video_compression_systems_jpeg/jpeg_rle1.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_video_compression_systems_jpeg/jpeg_rzs.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_video_compression_systems_jpeg/oc_video_compression_systems_jpeg.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_video_compression_systems_jpeg/zigzag.v]
+  top: oc_video_compression_systems_jpeg
+  out_dir: ./outputs/quip
+  type: sequential
+  clk(s): [clk]
+  reset(s): [rst]
+- file(s): [../verilogs/hdl-benchmarks/hdl/quip/oc_wb_dma/oc_wb_dma.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_wb_dma/wb_dma_ch_arb.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_wb_dma/wb_dma_ch_pri_enc.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_wb_dma/wb_dma_ch_rf.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_wb_dma/wb_dma_ch_sel.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_wb_dma/wb_dma_de.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_wb_dma/wb_dma_defines.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_wb_dma/wb_dma_inc30r.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_wb_dma/wb_dma_pri_enc_sub.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_wb_dma/wb_dma_rf.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_wb_dma/wb_dma_wb_if.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_wb_dma/wb_dma_wb_mast.v, ../verilogs/hdl-benchmarks/hdl/quip/oc_wb_dma/wb_dma_wb_slv.v]
+  top: oc_wb_dma
+  out_dir: ./outputs/quip
+  type: sequential
+  clk(s): [clk_i]
+  reset(s): [rst_i]
+- file(s): [../verilogs/hdl-benchmarks/hdl/quip/os_sdram16/hostcont.v, ../verilogs/hdl-benchmarks/hdl/quip/os_sdram16/inc.h, ../verilogs/hdl-benchmarks/hdl/quip/os_sdram16/micro.v, ../verilogs/hdl-benchmarks/hdl/quip/os_sdram16/os_sdram16.v, ../verilogs/hdl-benchmarks/hdl/quip/os_sdram16/sdramcnt.v, ../verilogs/hdl-benchmarks/hdl/quip/os_sdram16/tst_inc.h]
+  top: os_sdram16
+  out_dir: ./outputs/quip
+  type: sequential
+  clk(s): [main_sys_clk]
+  reset(s): [main_sys_rst, sys_rst_l]
+- file(s): [../verilogs/hdl-benchmarks/hdl/quip/ts_mike_fsm/ts_mike_fsm.v]
+  top: ts_mike_fsm
+  out_dir: ./outputs/quip
+  type: sequential
+  clk(s): [clock]
+- file(s): [../verilogs/hdl-benchmarks/hdl/quip/xbar_16x16/xbar_16x16.v]
+  top: xbar_16x16
+  out_dir: ./outputs/quip
+  type: sequential
+  clk(s): [clk]
+- file(s): [../verilogs/vtr/arm_core.v, ../verilogs/vtr/single_port_ram.v, ../verilogs/vtr/dual_port_ram.v]
+  top: arm_core
+  out_dir: ./outputs/vtr
+  type: sequential
+  clk(s): [i_clk]
+- file(s): [../verilogs/vtr/bgm.v, ../verilogs/vtr/single_port_ram.v, ../verilogs/vtr/dual_port_ram.v]
+  top: bgm
+  out_dir: ./outputs/vtr
+  type: sequential
+  clk(s): [clock]
+- file(s): [../verilogs/vtr/blob_merge.v, ../verilogs/vtr/single_port_ram.v, ../verilogs/vtr/dual_port_ram.v]
+  top: RLE_BlobMerging
+  out_dir: ./outputs/vtr
+  type: sequential
+  clk(s): [clk]
+  reset(s): [iReset]
+- file(s): [../verilogs/vtr/boundtop.v, ../verilogs/vtr/single_port_ram.v, ../verilogs/vtr/dual_port_ram.v]
+  top: paj_boundtop_hierarchy_no_mem
+  out_dir: ./outputs/vtr
+  type: sequential
+  clk(s): [tm3_clk_v0]
+  reset(s): [pglobalreset]
+- file(s): [../verilogs/vtr/ch_intrinsics.v, ../verilogs/vtr/single_port_ram.v, ../verilogs/vtr/dual_port_ram.v]
+  top: memset
+  out_dir: ./outputs/vtr
+  type: sequential
+  clk(s): [clk]
+  reset(s): [reset]
+- file(s): [../verilogs/vtr/diffeq1.v, ../verilogs/vtr/single_port_ram.v, ../verilogs/vtr/dual_port_ram.v]
+  top: diffeq_paj_convert
+  out_dir: ./outputs/vtr
+  type: sequential
+  clk(s): [clk]
+  reset(s): [reset]
+- file(s): [../verilogs/vtr/diffeq2.v, ../verilogs/vtr/single_port_ram.v, ../verilogs/vtr/dual_port_ram.v]
+  top: diffeq_f_systemC
+  out_dir: ./outputs/vtr
+  type: sequential
+  clk(s): [clk]
+  reset(s): [reset]
+- file(s): [../verilogs/vtr/LU32PEEng.v, ../verilogs/vtr/single_port_ram.v, ../verilogs/vtr/dual_port_ram.v]
+  top: LU32PEEng
+  out_dir: ./outputs/vtr
+  comment: lsoracle flow after one week MAX MEM 594.1 Gbytes;  AVG MEM 517.5 Gbytes
+- file(s): [../verilogs/vtr/LU64PEEng.v, ../verilogs/vtr/single_port_ram.v, ../verilogs/vtr/dual_port_ram.v]
+  top: LU64PEEng
+  out_dir: ./outputs/vtr
+  comment: lsoracle flow MAX MEM 725 Gbytes;  AVG MEM 318.4 Gbytes
+- file(s): [../verilogs/vtr/LU8PEEng.v, ../verilogs/vtr/single_port_ram.v, ../verilogs/vtr/dual_port_ram.v]
+  top: LU8PEEng
+  out_dir: ./outputs/vtr
+  type: sequential
+  clk(s): [clk]
+  reset(s): [reset_n]
+- file(s): [../verilogs/vtr/mcml.v, ../verilogs/vtr/single_port_ram.v, ../verilogs/vtr/dual_port_ram.v]
+  top: mcml
+  out_dir: ./outputs/vtr
+  type: sequential
+  clk(s): [clk]
+  reset(s): [reset]
+- file(s): [../verilogs/vtr/mkDelayWorker32B.v, ../verilogs/vtr/single_port_ram.v, ../verilogs/vtr/dual_port_ram.v]
+  top: mkDelayWorker32B
+  out_dir: ./outputs/vtr
+  type: sequential
+  clk(s): [wciS0_Clk]
+  reset(s): [wciS0_MReset_n]
+- file(s): [../verilogs/vtr/mkPktMerge.v, ../verilogs/vtr/single_port_ram.v, ../verilogs/vtr/dual_port_ram.v]
+  top: mkPktMerge
+  out_dir: ./outputs/vtr
+  type: sequential
+  clk(s): [CLK]
+  reset(s): [RST_N]
+- file(s): [../verilogs/vtr/mkSMAdapter4B.v, ../verilogs/vtr/single_port_ram.v, ../verilogs/vtr/dual_port_ram.v]
+  top: mkSMAdapter4B
+  out_dir: ./outputs/vtr
+  type: sequential
+  clk(s): [wciS0_Clk]
+  reset(s): [wciS0_MReset_n]
+- file(s): [../verilogs/vtr/or1200.v, ../verilogs/vtr/single_port_ram.v, ../verilogs/vtr/dual_port_ram.v]
+  top: or1200_flat
+  out_dir: ./outputs/vtr
+  type: sequential
+  clk(s): [clk]
+  reset(s): [rst]
+- file(s): [../verilogs/vtr/raygentop.v, ../verilogs/vtr/single_port_ram.v, ../verilogs/vtr/dual_port_ram.v]
+  top: paj_raygentop_hierarchy_no_mem
+  out_dir: ./outputs/vtr
+  type: sequential
+  clk(s): [clk]
+  reset(s): [globalreset]
+- file(s): [../verilogs/vtr/sha.v, ../verilogs/vtr/single_port_ram.v, ../verilogs/vtr/dual_port_ram.v]
+  top: sha1
+  out_dir: ./outputs/vtr
+  type: sequential
+  clk(s): [clk_i]
+  reset(s): [rst_i]
+- file(s): [../verilogs/vtr/spree.v, ../verilogs/vtr/single_port_ram.v, ../verilogs/vtr/dual_port_ram.v]
+  top: system
+  out_dir: ./outputs/vtr
+  type: sequential
+  clk(s): [clk]
+  reset(s): [resetn]
+- file(s): [../verilogs/vtr/stereovision0.v, ../verilogs/vtr/single_port_ram.v, ../verilogs/vtr/dual_port_ram.v]
+  top: sv_chip0_hierarchy_no_mem
+  out_dir: ./outputs/vtr
+  type: sequential
+  clk(s): [tm3_clk_v0]
+- file(s): [../verilogs/vtr/stereovision1.v, ../verilogs/vtr/single_port_ram.v, ../verilogs/vtr/dual_port_ram.v]
+  top: sv_chip1_hierarchy_no_mem
+  out_dir: ./outputs/vtr
+  type: sequential
+  clk(s): [tm3_clk_v0]
+  reset(s): [rst]
+- file(s): [../verilogs/vtr/stereovision2.v, ../verilogs/vtr/single_port_ram.v, ../verilogs/vtr/dual_port_ram.v]
+  top: sv_chip2_hierarchy_no_mem
+  out_dir: ./outputs/vtr
+  type: sequential
+  clk(s): [tm3_clk_v0]
+  reset(s): [reset]
+- file(s): [../verilogs/vtr/stereovision3.v, ../verilogs/vtr/single_port_ram.v, ../verilogs/vtr/dual_port_ram.v]
+  top: sv_chip3_hierarchy_no_mem
+  out_dir: ./outputs/vtr
+  type: sequential
+  clk(s): [tm3_clk_v0, tm3_clk_v2]
+- file(s): [../verilogs/vtr/koios/attention_layer.v]
+  top: attention_layer
+  out_dir: ./outputs/koios
+  type: sequential
+  clk(s): [clk]
+  reset(s): [rst]
+- file(s): [../verilogs/vtr/koios/bnn.v]
+  top: bnn
+  out_dir: ./outputs/koios
+  type: sequential
+  clk(s): [ap_clk]
+  reset(s): [ap_rst]
+- file(s): [../verilogs/vtr/koios/bwave_like.fixed.large.v]
+  top: NPU
+  out_dir: ./outputs/koios/bwave_like.fixed.large
+  comment: abc flow yosys.log ERROR ABC execution of command ""/home/wllpro/llwang04/abc-master/abc" -s -f _tmp_yosys-abc-H90lm3/abc.script 2>&1" failed return code 134. src/base/abc/abcFanio.c:92 Abc_ObjAddFanin Assertion `!Abc_ObjIsNet(pObj) || !Abc_ObjFaninNum(pObj)' failed.
+- file(s): [../verilogs/vtr/koios/bwave_like.fixed.small.v]
+  top: NPU
+  out_dir: ./outputs/koios/bwave_like.fixed.small
+  comment: lsoracle flow MAX MEM 719.6 Gbytes;  AVG MEM 595 Gbytes
+- file(s): [../verilogs/vtr/koios/bwave_like.float.large.v]
+  top: NPU
+  out_dir: ./outputs/koios/bwave_like.float.large
+  comment: abc flow yosys.log ERROR ABC execution of command ""/home/wllpro/llwang04/abc-master/abc" -s -f _tmp_yosys-abc-H90lm3/abc.script 2>&1" failed return code 139.
+- file(s): [../verilogs/vtr/koios/bwave_like.float.small.v]
+  top: NPU
+  out_dir: ./outputs/koios/bwave_like.float.small
+  comment: abc flow yosys.log ERROR ABC execution of command ""/home/wllpro/llwang04/abc-master/abc" -s -f _tmp_yosys-abc-H90lm3/abc.script 2>&1" failed return code 139.
+- file(s): [../verilogs/vtr/koios/clstm_like.large.v]
+  top: C_LSTM_datapath
+  out_dir: ./outputs/koios/clstm_like.large
+  comment: abc flow yosys.log ERROR ABC execution of command ""/home/wllpro/llwang04/abc-master/abc" -s -f _tmp_yosys-abc-H90lm3/abc.script 2>&1" failed return code 139.
+- file(s): [../verilogs/vtr/koios/clstm_like.medium.v]
+  top: C_LSTM_datapath
+  out_dir: ./outputs/koios/clstm_like.medium
+  comment: abc flow yosys.log ERROR ABC execution of command ""/home/wllpro/llwang04/abc-master/abc" -s -f _tmp_yosys-abc-H90lm3/abc.script 2>&1" failed return code 139.
+- file(s): [../verilogs/vtr/koios/clstm_like.small.v]
+  top: C_LSTM_datapath
+  out_dir: ./outputs/koios/clstm_like.small
+  comment: lsoracle flow MAX MEM 591.2 Gbytes;  AVG MEM 509.4 Gbytes
+- file(s): [../verilogs/vtr/koios/conv_layer_hls.v]
+  top: top
+  out_dir: ./outputs/koios
+  type: sequential
+  clk(s): [ap_clk]
+  reset(s): [ap_rst]
+- file(s): [../verilogs/vtr/koios/conv_layer.v]
+  top: conv_layer
+  out_dir: ./outputs/koios
+  comment: lsoracle flow MAX MEM 723.5 Gbytes;  AVG MEM 638.3 Gbytes
+- file(s): [../verilogs/vtr/koios/dla_like.large.v]
+  top: DLA
+  out_dir: ./outputs/koios/dla_like.large
+  comment: lsoracle flow MAX MEM 525.2 Gbytes;  AVG MEM 229.2 Gbytes
+- file(s): [../verilogs/vtr/koios/dla_like.medium.v]
+  top: DLA
+  out_dir: ./outputs/koios/dla_like.medium
+  comment: lsoracle flow MAX MEM 643 Gbytes;  AVG MEM 534.1 Gbytes
+- file(s): [../verilogs/vtr/koios/dla_like.small.v]
+  top: DLA
+  out_dir: ./outputs/koios/dla_like.small
+  comment: lsoracle flow after one week yosys.log ERROR Can't open LSOracle output file `/tmp/yosys-abc-O0QcsY/output.blif'.
+- file(s): [../verilogs/vtr/koios/dnnweaver.v]
+  top: cl_wrapper
+  out_dir: ./outputs/koios
+  comment: abc flow yosys.log ERROR ABC execution of command ""/home/wllpro/llwang04/abc-master/abc" -s -f _tmp_yosys-abc-H90lm3/abc.script 2>&1" failed return code 139.
+- file(s): [../verilogs/vtr/koios/eltwise_layer.v]
+  top: eltwise_layer
+  out_dir: ./outputs/koios
+  comment: lsoracle flow MAX MEM 677.7 Gbytes;  AVG MEM 547.9 Gbytes
+- file(s): [../verilogs/vtr/koios/gemm_layer.v]
+  top: gemm_layer
+  out_dir: ./outputs/koios
+  comment: lsoracle flow after one week Partition 466 xagscript
+- file(s): [../verilogs/vtr/koios/lenet.v]
+  top: myproject
+  out_dir: ./outputs/koios
+  comment: Executing OPT_MERGE pass (detect identical cells).
+- file(s): [../verilogs/vtr/koios/lstm.v]
+  top: top
+  out_dir: ./outputs/koios/lstm
+  comment: lsoracle flow after one week yosys.log ERROR Can't open LSOracle output file `/tmp/yosys-abc-mLAVKx/output.blif'.
+- file(s): [../verilogs/vtr/koios/proxy.1.v]
+  top: top
+  out_dir: ./outputs/koios/proxy.1
+  comment: lsoracle flow MAX MEM 721.8 Gbytes;  AVG MEM 164.4 Gbytes
+- file(s): [../verilogs/vtr/koios/proxy.2.v]
+  top: top
+  out_dir: ./outputs/koios/proxy.2
+  comment: terminate called after throwing an instance of 'std::length_error' what()  hash table exceeded maximum size. Design is likely too large for yosys to handle, if possible try not to flatten the design.
+- file(s): [../verilogs/vtr/koios/proxy.3.v]
+  top: top
+  out_dir: ./outputs/koios/proxy.3
+  comment: Executing OPT_MERGE pass (detect identical cells).
+- file(s): [../verilogs/vtr/koios/proxy.4.v]
+  top: top
+  out_dir: ./outputs/koios/proxy.4
+  comment: terminate called after throwing an instance of 'std::length_error' what()  hash table exceeded maximum size. Design is likely too large for yosys to handle, if possible try not to flatten the design.
+- file(s): [../verilogs/vtr/koios/proxy.5.v]
+  top: top
+  out_dir: ./outputs/koios/proxy.5
+  comment: abc flow yosys.log ERROR ABC execution of command ""/home/wllpro/llwang04/abc-master/abc" -s -f _tmp_yosys-abc-H90lm3/abc.script 2>&1" failed return code 139.
+- file(s): [../verilogs/vtr/koios/proxy.6.v]
+  top: top
+  out_dir: ./outputs/koios/proxy.6
+  comment: lsoracle flow MAX MEM 670.6 Gbytes;  AVG MEM 420.3 Gbytes
+- file(s): [../verilogs/vtr/koios/proxy.7.v]
+  top: top
+  out_dir: ./outputs/koios/proxy.7
+  comment: terminate called after throwing an instance of 'std::length_error' what()  hash table exceeded maximum size. Design is likely too large for yosys to handle, if possible try not to flatten the design.
+- file(s): [../verilogs/vtr/koios/proxy.8.v]
+  top: top
+  out_dir: ./outputs/koios/proxy.8
+  comment: lsoracle flow MAX MEM 425.6 Gbytes;  AVG MEM 201.3 Gbytes
+- file(s): [../verilogs/vtr/koios/reduction_layer.v]
+  top: reduction_layer
+  out_dir: ./outputs/koios
+  type: sequential
+  clk(s): [clk]
+  reset(s): [resetn]
+- file(s): [../verilogs/vtr/koios/robot_rl.v]
+  top: robot_maze
+  out_dir: ./outputs/koios
+  type: sequential
+  clk(s): [clk]
+  reset(s): [reset]
+- file(s): [../verilogs/vtr/koios/softmax.v]
+  top: softmax
+  out_dir: ./outputs/koios
+  type: sequential
+  clk(s): [clk]
+  reset(s): [reset]
+- file(s): [../verilogs/vtr/koios/spmv.v]
+  top: spmv
+  out_dir: ./outputs/koios
+  type: sequential
+  clk(s): [clk]
+  reset(s): [rst]
+- file(s): [../verilogs/vtr/koios/tdarknet_like.large.v]
+  top: td_fused_top
+  out_dir: ./outputs/koios/tdarknet_like.large
+  comment: terminate called after throwing an instance of 'std::length_error' what()  hash table exceeded maximum size. Design is likely too large for yosys to handle, if possible try not to flatten the design.
+- file(s): [../verilogs/vtr/koios/tdarknet_like.small.v]
+  top: td_fused_top
+  out_dir: ./outputs/koios/tdarknet_like.small
+  comment: terminate called after throwing an instance of 'std::length_error' what()  hash table exceeded maximum size. Design is likely too large for yosys to handle, if possible try not to flatten the design.
+- file(s): [../verilogs/vtr/koios/tpu_like.large.os.v]
+  top: top
+  out_dir: ./outputs/koios/tpu_like.large.os
+  comment: lsoracle flow after one week Partition 3 aigscript5 LSOracle balanced LSOracle Result depth 12 size 3217 ERROR LSOracle execution of command "/home/wllpro/llwang04/LSOracle-master/build/core/lsoracle -f /tmp/yosys-abc-58UOzG/lso.script 2>&1" failed return code 137.
+- file(s): [../verilogs/vtr/koios/tpu_like.large.ws.v]
+  top: top
+  out_dir: ./outputs/koios/tpu_like.large.ws
+  comment: lsoracle flow MAX MEM 438.9 Gbytes;  AVG MEM 351 Gbytes
+- file(s): [../verilogs/vtr/koios/tpu_like.small.os.v]
+  top: top
+  out_dir: ./outputs/koios/tpu_like.small.os
+  comment: lsoracle flow after one week MAX MEM 478 Gbytes;  AVG MEM 406.6 Gbytes
+- file(s): [../verilogs/vtr/koios/tpu_like.small.ws.v]
+  top: top
+  out_dir: ./outputs/koios/tpu_like.small.ws
+  comment: lsoracle flow MAX MEM 572.4 Gbytes;  AVG MEM 436 Gbytes
