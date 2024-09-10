@@ -18,6 +18,70 @@ The core of HyPaR is a novel two-stage MFFC-based hypergraph partitioning techni
 
 HyPaR is an open-source project designed to advance the field of logic optimization, offering a robust, scalable solution for large-scale circuit design challenges.
 
+## Build
+
+To build and configure LOFMPL, follow the steps below:
+
+### 1. Clone the Repository
+First, clone the LOFMPL repository and initialize the required submodules:
+```bash
+git clone https://github.com/kxzhu0505/LOFMPL.git
+cd LOFMPL
+git submodule update --init --recursive
+```
+
+### 2. Build ABC and LSOracle
+LOFMPL relies on ABC and LSOracle for circuit partitioning. You need to build these tools following their respective instructions.
+
+#### **ABC_P:**
+- Navigate to the ABC submodule directory:
+  ```bash
+  cd abc_p
+  ```
+- Build ABC as per the instructions in the `README.md` of the ABC repository.
+
+#### **LSOracle_p:**
+- Navigate to the LSOracle submodule directory:
+  ```bash
+  cd LSOracle_p
+  ```
+- Follow the build instructions in the `README.md` of the LSOracle repository.
+
+### 3. Build rl_logic_synthesis for Parallel Optimization
+LOFMPL uses the `rl_logic_synthesis` tool for reinforcement learning-based optimization. Build it by following the steps below:
+- Navigate to the `rl_logic_synthesis` directory:
+  ```bash
+  cd rl_logic_synthesis
+  ```
+- Follow the build and setup instructions provided in the `README.md` of the `rl_logic_synthesis` repository.
+
+## Usage
+
+Once the build process is complete, follow these steps to perform partitioning, optimization, and evaluation of circuits.
+
+### 1. Partition the Circuit
+To partition the input circuit into subcircuits, use the `run_partition.sh` script:
+```bash
+./Scripts/run_partition.sh
+```
+This step divides the input circuit using tools such as ABC and LSOracle.
+
+### 2. Perform Parallel Optimization
+After partitioning, use the `run_DSE.sh` script to optimize the subcircuits in parallel:
+```bash
+./Scripts/run_DSE.sh
+```
+This script applies reinforcement learning techniques to optimize the design space for the subcircuits.
+
+### 3. Merge and Evaluate the Optimized Subcircuits
+Once the optimization is complete, use the `run_top.sh` script to merge the optimized subcircuits and evaluate the final design using Synopsys Design Compiler (DC):
+```bash
+./Scripts/run_top.sh
+```
+The final merged design will be evaluated for area, delay, and power metrics using DC.
+
+---
+
 Experiment Results For All 150+ benchmarks on ASIC Technology Mapping
 |                    Benchmarks                   |           |    ABC    |             |           |  LSOracle |             |           |   BoiLs   |            |           |   DriLLs  |            |           |   HyPaR   |            |
 |:-----------------------------------------------:|:---------:|:---------:|:-----------:|:---------:|:---------:|:-----------:|:---------:|:---------:|:----------:|:---------:|:---------:|:----------:|:---------:|:---------:|:----------:|
