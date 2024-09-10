@@ -10,3 +10,6 @@
 [submodule "verilogs/OPDB"]
 	path = verilogs/OPDB
 	url = https://github.com/PrincetonUniversity/OPDB.git
+[submodule "verilogs/benchmarks"]
+	path = verilogs/benchmarks
+	url = https://github.com/lsils/benchmarks.git
