@@ -1,0 +1,453 @@
+
+-- Running command `read_verilog tpu_like.large.ws.v; hierarchy -check -auto-top' --
+
+1. Executing Verilog-2005 frontend: tpu_like.large.ws.v
+Parsing Verilog input from `tpu_like.large.ws.v' to AST representation.
+Generating RTLIL representation for module `\matmul_32x32_systolic'.
+Generating RTLIL representation for module `\systolic_data_setup'.
+Generating RTLIL representation for module `\systolic_pe_matrix'.
+Generating RTLIL representation for module `\processing_element'.
+Generating RTLIL representation for module `\seq_mac'.
+Generating RTLIL representation for module `\qmult'.
+Generating RTLIL representation for module `\qadd'.
+Generating RTLIL representation for module `\cfg'.
+Generating RTLIL representation for module `\norm'.
+Generating RTLIL representation for module `\norm_sub'.
+Generating RTLIL representation for module `\ram'.
+Generating RTLIL representation for module `\control'.
+Generating RTLIL representation for module `\accumulator'.
+Generating RTLIL representation for module `\pooling'.
+Generating RTLIL representation for module `\activation'.
+Generating RTLIL representation for module `\sub_activation'.
+Note: Assuming pure combinatorial block at tpu_like.large.ws.v:21797.1-21812.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at tpu_like.large.ws.v:21815.1-21830.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at tpu_like.large.ws.v:21833.1-21870.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\top'.
+Successfully finished Verilog frontend.
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Finding top of design hierarchy..
+root of   5 design levels: top                 
+root of   0 design levels: sub_activation      
+root of   1 design levels: activation          
+root of   0 design levels: pooling             
+root of   1 design levels: accumulator         
+root of   0 design levels: control             
+root of   0 design levels: ram                 
+root of   0 design levels: norm_sub            
+root of   1 design levels: norm                
+root of   0 design levels: cfg                 
+root of   0 design levels: qadd                
+root of   0 design levels: qmult               
+root of   1 design levels: seq_mac             
+root of   2 design levels: processing_element  
+root of   3 design levels: systolic_pe_matrix  
+root of   0 design levels: systolic_data_setup 
+root of   4 design levels: matmul_32x32_systolic
+Automatically selected top as design top module.
+
+2.2. Analyzing design hierarchy..
+Top module:  \top
+Used module:     \activation
+Used module:         \sub_activation
+Used module:     \norm
+Used module:         \norm_sub
+Used module:     \pooling
+Used module:     \accumulator
+Used module:         \ram
+Used module:         \qadd
+Used module:     \matmul_32x32_systolic
+Used module:         \systolic_pe_matrix
+Used module:             \processing_element
+Used module:                 \seq_mac
+Used module:                     \qmult
+Used module:         \systolic_data_setup
+Used module:     \cfg
+Used module:     \control
+Parameter \AW = 11
+Parameter \MW = 32
+Parameter \DW = 8
+
+2.3. Executing AST frontend in derive mode using pre-parsed AST for module `\ram'.
+Parameter \AW = 11
+Parameter \MW = 32
+Parameter \DW = 8
+Generating RTLIL representation for module `$paramod$600a460427eb1e43ac77de8f693159b97c439195\ram'.
+Parameter \AW = 11
+Parameter \MW = 32
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$600a460427eb1e43ac77de8f693159b97c439195\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+
+2.4. Executing AST frontend in derive mode using pre-parsed AST for module `\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Generating RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+Parameter \AW = 11
+Parameter \MW = 1
+Parameter \DW = 8
+Found cached RTLIL representation for module `$paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram'.
+
+2.5. Analyzing design hierarchy..
+Top module:  \top
+Used module:     \activation
+Used module:         \sub_activation
+Used module:     \norm
+Used module:         \norm_sub
+Used module:     \pooling
+Used module:     \accumulator
+Used module:         $paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram
+Used module:         \qadd
+Used module:     \matmul_32x32_systolic
+Used module:         \systolic_pe_matrix
+Used module:             \processing_element
+Used module:                 \seq_mac
+Used module:                     \qmult
+Used module:         \systolic_data_setup
+Used module:     \cfg
+Used module:     \control
+Used module:     $paramod$600a460427eb1e43ac77de8f693159b97c439195\ram
+
+2.6. Analyzing design hierarchy..
+Top module:  \top
+Used module:     \activation
+Used module:         \sub_activation
+Used module:     \norm
+Used module:         \norm_sub
+Used module:     \pooling
+Used module:     \accumulator
+Used module:         $paramod$5183acb352066b0beabb11598cddf2cbc81179ad\ram
+Used module:         \qadd
+Used module:     \matmul_32x32_systolic
+Used module:         \systolic_pe_matrix
+Used module:             \processing_element
+Used module:                 \seq_mac
+Used module:                     \qmult
+Used module:         \systolic_data_setup
+Used module:     \cfg
+Used module:     \control
+Used module:     $paramod$600a460427eb1e43ac77de8f693159b97c439195\ram
+Removing unused module `\ram'.
+Removed 1 unused modules.
+Mapping positional arguments of cell accumulator.adder_accum_pong31 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_pong30 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_pong29 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_pong28 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_pong27 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_pong26 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_pong25 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_pong24 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_pong23 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_pong22 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_pong21 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_pong20 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_pong19 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_pong18 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_pong17 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_pong16 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_pong15 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_pong14 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_pong13 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_pong12 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_pong11 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_pong10 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_pong9 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_pong8 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_pong7 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_pong6 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_pong5 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_pong4 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_pong3 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_pong2 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_pong1 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_pong0 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_ping31 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_ping30 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_ping29 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_ping28 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_ping27 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_ping26 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_ping25 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_ping24 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_ping23 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_ping22 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_ping21 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_ping20 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_ping19 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_ping18 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_ping17 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_ping16 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_ping15 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_ping14 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_ping13 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_ping12 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_ping11 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_ping10 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_ping9 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_ping8 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_ping7 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_ping6 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_ping5 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_ping4 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_ping3 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_ping2 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_ping1 (qadd).
+Mapping positional arguments of cell accumulator.adder_accum_ping0 (qadd).

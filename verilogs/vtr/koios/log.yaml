@@ -1,0 +1,148 @@
+- file(s): [/home/zli/vtr-verilog-to-routing/vtr_flow/benchmarks/verilog/koios/attention_layer.v]
+  top: attention_layer
+  out_dir: /home/zli/Desktop/benchmarks/koios
+
+- file(s): [/home/zli/vtr-verilog-to-routing/vtr_flow/benchmarks/verilog/koios/bnn.v]
+  top: bnn
+  out_dir: /home/zli/Desktop/benchmarks/koios
+
+- file(s): [/home/zli/vtr-verilog-to-routing/vtr_flow/benchmarks/verilog/koios/bwave_like.fixed.large.v]
+  top: NPU
+  out_dir: /home/zli/Desktop/benchmarks/koios/bwave_like.fixed.large
+
+- file(s): [/home/zli/vtr-verilog-to-routing/vtr_flow/benchmarks/verilog/koios/bwave_like.fixed.small.v]
+  top: NPU
+  out_dir: /home/zli/Desktop/benchmarks/koios/bwave_like.fixed.small
+
+- file(s): [/home/zli/vtr-verilog-to-routing/vtr_flow/benchmarks/verilog/koios/bwave_like.float.large.v]
+  top: NPU
+  out_dir: /home/zli/Desktop/benchmarks/koios/bwave_like.float.large
+
+- file(s): [/home/zli/vtr-verilog-to-routing/vtr_flow/benchmarks/verilog/koios/bwave_like.float.small.v]
+  top: NPU
+  out_dir: /home/zli/Desktop/benchmarks/koios/bwave_like.float.small
+
+- file(s): [/home/zli/vtr-verilog-to-routing/vtr_flow/benchmarks/verilog/koios/clstm_like.large.v]
+  top: C_LSTM_datapath
+  out_dir: /home/zli/Desktop/benchmarks/koios
+
+- file(s): [/home/zli/vtr-verilog-to-routing/vtr_flow/benchmarks/verilog/koios/clstm_like.medium.v]
+  top: C_LSTM_datapath
+  out_dir: /home/zli/Desktop/benchmarks/koios/clstm_like.medium
+
+- file(s): [/home/zli/vtr-verilog-to-routing/vtr_flow/benchmarks/verilog/koios/clstm_like.small.v]
+  top: C_LSTM_datapath
+  out_dir: /home/zli/Desktop/benchmarks/koios/clstm_like.small
+
+- file(s): [/home/zli/vtr-verilog-to-routing/vtr_flow/benchmarks/verilog/koios/conv_layer_hls.v]
+  top: top
+  out_dir: /home/zli/Desktop/benchmarks/koios
+
+- file(s): [/home/zli/vtr-verilog-to-routing/vtr_flow/benchmarks/verilog/koios/conv_layer.v]
+  top: con_layer
+  out_dir: /home/zli/Desktop/benchmarks/koios
+
+- file(s): [/home/zli/vtr-verilog-to-routing/vtr_flow/benchmarks/verilog/koios/dla_like.large.v]
+  top: DLA
+  out_dir: /home/zli/Desktop/benchmarks/koios/dla_like.large
+
+- file(s): [/home/zli/vtr-verilog-to-routing/vtr_flow/benchmarks/verilog/koios/dla_like.medium.v]
+  top: DLA
+  out_dir: /home/zli/Desktop/benchmarks/koios/dla_like.medium
+
+- file(s): [/home/zli/vtr-verilog-to-routing/vtr_flow/benchmarks/verilog/koios/dla_like.small.v]
+  top: DLA
+  out_dir: /home/zli/Desktop/benchmarks/koios/dla_like.small
+
+- file(s): [/home/zli/vtr-verilog-to-routing/vtr_flow/benchmarks/verilog/koios/dnnweaver.v]
+  top: cl_wrapper
+  out_dir: /home/zli/Desktop/benchmarks/koios
+
+- file(s): [/home/zli/vtr-verilog-to-routing/vtr_flow/benchmarks/verilog/koios/eltwise_layer.v]
+  top: eltwise_layer
+  out_dir: /home/zli/Desktop/benchmarks/koios
+
+- file(s): [/home/zli/vtr-verilog-to-routing/vtr_flow/benchmarks/verilog/koios/gemm_layer.v]
+  top: gemm_layer
+  out_dir: /home/zli/Desktop/benchmarks/koios
+
+- file(s): [/home/zli/vtr-verilog-to-routing/vtr_flow/benchmarks/verilog/koios/lenet.v]
+  top: myproject
+  out_dir: /home/zli/Desktop/benchmarks/koios
+
+- file(s): [/home/zli/vtr-verilog-to-routing/vtr_flow/benchmarks/verilog/koios/lstm.v]
+  top: top
+  out_dir: /home/zli/Desktop/benchmarks/koios/lstm
+
+- file(s): [/home/zli/vtr-verilog-to-routing/vtr_flow/benchmarks/verilog/koios/proxy.1.v]
+  top: top
+  out_dir: /home/zli/Desktop/benchmarks/koios/proxy.1
+
+- file(s): [/home/zli/vtr-verilog-to-routing/vtr_flow/benchmarks/verilog/koios/proxy.2.v]
+  top: top
+  out_dir: /home/zli/Desktop/benchmarks/koios/proxy.2
+
+- file(s): [/home/zli/vtr-verilog-to-routing/vtr_flow/benchmarks/verilog/koios/proxy.3.v]
+  top: top
+  out_dir: /home/zli/Desktop/benchmarks/koios/proxy.3
+
+- file(s): [/home/zli/vtr-verilog-to-routing/vtr_flow/benchmarks/verilog/koios/proxy.4.v]
+  top: top
+  out_dir: /home/zli/Desktop/benchmarks/koios/proxy.4
+
+- file(s): [/home/zli/vtr-verilog-to-routing/vtr_flow/benchmarks/verilog/koios/proxy.5.v]
+  top: top
+  out_dir: /home/zli/Desktop/benchmarks/koios/proxy.5
+
+- file(s): [/home/zli/vtr-verilog-to-routing/vtr_flow/benchmarks/verilog/koios/proxy.6.v]
+  top: top
+  out_dir: /home/zli/Desktop/benchmarks/koios/proxy.6
+
+- file(s): [/home/zli/vtr-verilog-to-routing/vtr_flow/benchmarks/verilog/koios/proxy.7.v]
+  top: top
+  out_dir: /home/zli/Desktop/benchmarks/koios/proxy.7
+
+- file(s): [/home/zli/vtr-verilog-to-routing/vtr_flow/benchmarks/verilog/koios/proxy.8.v]
+  top: top
+  out_dir: /home/zli/Desktop/benchmarks/koios/proxy.8
+
+- file(s): [/home/zli/vtr-verilog-to-routing/vtr_flow/benchmarks/verilog/koios/reduction_layer.v]
+  top: reduction_layer
+  out_dir: /home/zli/Desktop/benchmarks/koios
+
+- file(s): [/home/zli/vtr-verilog-to-routing/vtr_flow/benchmarks/verilog/koios/robot_rl.v]
+  top: robot_maze
+  out_dir: /home/zli/Desktop/benchmarks/koios
+
+- file(s): [/home/zli/vtr-verilog-to-routing/vtr_flow/benchmarks/verilog/koios/softmax.v]
+  top: softmax
+  out_dir: /home/zli/Desktop/benchmarks/koios
+
+- file(s): [/home/zli/vtr-verilog-to-routing/vtr_flow/benchmarks/verilog/koios/spmv.v]
+  top: spmv
+  out_dir: /home/zli/Desktop/benchmarks/koios
+
+- file(s): [/home/zli/vtr-verilog-to-routing/vtr_flow/benchmarks/verilog/koios/tdarknet_like.large.v]
+  top: td_fused_top
+  out_dir: /home/zli/Desktop/benchmarks/koios/tdarknet_like.large
+
+- file(s): [/home/zli/vtr-verilog-to-routing/vtr_flow/benchmarks/verilog/koios/tdarknet_like.small.v]
+  top: td_fused_top
+  out_dir: /home/zli/Desktop/benchmarks/koios/tdarknet_like.small
+
+- file(s): [/home/zli/vtr-verilog-to-routing/vtr_flow/benchmarks/verilog/koios/tpu_like.large.os.v]
+  top: top
+  out_dir: /home/zli/Desktop/benchmarks/koios/tpu_like.large.os
+
+- file(s): [/home/zli/vtr-verilog-to-routing/vtr_flow/benchmarks/verilog/koios/tpu_like.large.ws.v]
+  top: top
+  out_dir: /home/zli/Desktop/benchmarks/koios/tpu_like.large.ws
+
+- file(s): [/home/zli/vtr-verilog-to-routing/vtr_flow/benchmarks/verilog/koios/tpu_like.small.os.v]
+  top: top
+  out_dir: /home/zli/Desktop/benchmarks/koios/tpu_like.small.os
+
+- file(s): [/home/zli/vtr-verilog-to-routing/vtr_flow/benchmarks/verilog/koios/tpu_like.small.ws.v]
+  top: top
+  out_dir: /home/zli/Desktop/benchmarks/koios/tpu_like.small.ws
+
