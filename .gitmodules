@@ -7,3 +7,6 @@
 [submodule "LSOracle_p"]
 	path = LSOracle_p
 	url = https://github.com/kxzhu0505/LSOracle_p.git
+[submodule "verilogs/OPDB"]
+	path = verilogs/OPDB
+	url = https://github.com/PrincetonUniversity/OPDB.git
