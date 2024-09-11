@@ -13,3 +13,6 @@
 [submodule "verilogs/benchmarks"]
 	path = verilogs/benchmarks
 	url = https://github.com/lsils/benchmarks.git
+[submodule "yosys"]
+	path = yosys
+	url = https://github.com/YosysHQ/yosys.git
